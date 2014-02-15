@@ -1,0 +1,32 @@
+<div id="Header">
+  <div id="Nav">
+    <r:if_url     matches="rubyonrails.pl\/?\z"><a href="/" class="current">Wprowadzenie</a> |</r:if_url>
+    <r:unless_url matches="rubyonrails.pl\/?\z"><a href="/">Wprowadzenie</a> |</r:unless_url>
+
+    <r:if_url     matches="screencasty"><a href="/screencasty" class="current">Screencasty</a> |</r:if_url>
+    <r:unless_url matches="screencasty"><a href="/screencasty">Screencasty</a> |</r:unless_url>
+
+    <r:if_url     matches="pobierz"><a href="/pobierz" class="current">Pobierz</a> |</r:if_url>
+    <r:unless_url matches="pobierz"><a href="/pobierz">Pobierz</a> |</r:unless_url>
+
+    <r:if_url     matches="wdrozenie"><a href="/wdrozenie" class="current">Wdrożenie</a> |</r:if_url>
+    <r:unless_url matches="wdrozenie"><a href="/wdrozenie">Wdrożenie</a> |</r:unless_url>
+
+    <r:if_url     matches="dokumentacja"><a href="/dokumentacja" class="current">Dokumentacja</a> |</r:if_url>
+    <r:unless_url matches="dokumentacja"><a href="/dokumentacja">Dokumentacja</a> |</r:unless_url>
+
+    <r:if_url     matches="ekosystem"><a href="/ekosystem" class="current">Ekosystem</a> |</r:if_url>
+    <r:unless_url matches="ekosystem"><a href="/ekosystem">Ekosystem</a> |</r:unless_url>
+
+    <r:if_url     matches="planeta"><a href="/planeta" class="current">Planeta</a> |</r:if_url>
+    <r:unless_url matches="planeta"><a href="/planeta">Planeta</a> |</r:unless_url>
+
+    <r:if_url     matches="spolecznosc"><a href="/forum" class="current">Forum</a> |</r:if_url>
+    <r:unless_url matches="spolecznosc"><a href="/forum">Forum</a> |</r:unless_url>
+
+    <r:if_url     matches="irc"><a href="irc://irc.eu.freenode.net/rubyonrails.pl" class="current">IRc</a> |</r:if_url>
+    <r:unless_url matches="irc"><a href="irc://irc.eu.freenode.net/rubyonrails.pl">IRC</a> |</r:unless_url>
+
+    <a href="http://github.com/rails/rails/tree/master" lang="en">Źródła</a>
+  </div>
+</div>

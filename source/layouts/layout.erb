@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="google-site-verification" content="71mvx19sfJeKKraQExa1QIEhNYYCrS6BRh3kJVAC58g" />
+    <link rel="alternate" type="application/rss+xml" title="Planeta rubyonrails.pl" href="http://pipes.yahoo.com/pipes/pipe.run?_id=IpQJj7_k3BGJlbxaJxOy0Q&_render=rss" />
+    <title><%= current_page.data.title || "Ruby on Rails PL" %></title>
+    <%= stylesheet_link_tag "normalize", "screen" %>
+  </head>
+  <body class="overview">
+    <div class="Container">
+      <%= partial "header" %>
+      <r:snippet name="message" />
+    </div>
+
+    <r:if_content part="extended"><r:content part="extended" /></r:if_content>
+
+    <r:if_content>
+      <div class="content">
+	<%= yield %>
+	<div class="clearall">&nbsp;</div>
+      </div>
+    </r:if_content>
+
+    <%= partial "footer" %>
+  </body>
+
+  <%= partial "ga" %>
+
+</html>
+

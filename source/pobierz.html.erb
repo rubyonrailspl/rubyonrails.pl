@@ -1,0 +1,76 @@
+---
+title: Pobierz Rails
+---
+
+<div class="sub">
+  <h1>Ruby</h1>
+</div>
+
+<div class="main">
+  <%= image_tag("ruby.png") %>
+  <p>Zalecaną wersją Rubiego do pracy z Rails jest <span class="highlight">Ruby 2.0</span> Przestaliśmy wspierać Ruby 1.8.x z chwilą wydania Rails 3.2. Ruby 1.9.2+ będzie wspierany aż do Rails 5</p>
+  
+  <p>Użytkownicy systemów uniksowych (m.in. Linux, Mac-OS-X) mogą skorzystać z <a href="http://rvm.beginrescueend.com/">RVM (Ruby Version Manager)</a>, <a href="https://github.com/sstephenson/rbenv">rbenv</a> lub <a href="https://github.com/postmodern/chruby">chruby</a>, które pozwalają stworzyć izolowane środowiska dla wielu wersji Ruby'ego (włacznie z JRuby, Rubiniusem i innymi implementacjami).<p> 
+
+  <p>Użytkownicy systemu Windows, mogą ściagnąć gotowy instalator ze strony <a href="http://rubyinstaller.org">http://rubyinstaller.org</a>. Opcjonalnie można pobrać <a href="http://rubyinstaller.org/add-ons/devkit/">DevKit</a>, <a href="http://rubyinstaller.org/add-ons/rake-compiler/">rake-compiler</a> przydatny dla twórców gem'ów z rozszerzeniami w C oraz <a href="http://rubyinstaller.org/add-ons/pik/">Pik</a> aby mieć jednocześnie kilka wersji Rubiego w systemie.</p>
+</div>
+
+<div class="clearall">&nbsp;</div>
+
+<div class="sub">
+  <h1>RubyGems</h1>
+</div>
+
+<div class="main">
+  <%= image_tag("rubygems.png") %>
+  <p><a href="http://docs.rubygems.org/">RubyGems</a> to <span class="highlight">standardowy manager pakietów (gemów) Rubiego</span>. Działa podobnie jak apt-get, emerge lub podobne systemy zarządzania pakietami podstępne dla różnych systemów operacyjnych. Ruby 1.9.x ma zbudowany standardowo RubyGems i nie trzeba go pobierać. Użytkownicy starszych wersji Ruby'ego muszą go <a href="http://rubygems.org/pages/download">pobrać i zainstalować</a> (po rozpakowaniu należy uruchomić komendę <code>ruby setup.rb</code>).</p>
+</div>
+
+<div class="clearall">&nbsp;</div>
+
+<div class="sub">
+  <h1>Rails</h1>
+</div>
+
+<div class="main">
+  <p>Mając zainstalowane gemy, możesz zainstalować Rails, wraz z wszystkimi zależnymi pakietami, za pomocą komendy:</p>
+
+  <p style="margin-left: 20px"><b>gem install rails</b></p>
+  <p>Nowe wersje Railsów mogą być instalowane w ten sam sposób. Najnowszy kod źródłowy Rails wraz z dostępnymi starszymi wersjami <a href="http://github.com/rails/rails">jest dostępny na Githubie</a>.</p>
+</div>
+
+
+<div class="clearall">&nbsp;</div>
+
+<div class="sub">
+  <h1>Utwórz swoją aplikację</h1>
+</div>
+
+<div class="main">
+  <p>Utwórz szkielet aplikacji i uruchom serwer:</p>
+  <p>
+    <pre>
+rails new myapp
+cd myapp
+rails s
+</pre>
+    </p>
+
+  <p>
+    Właśnie uruchomileś Ruby on Rails! Zajrzyj do instrukcji pod adresem http://localhost:3000.
+  </p>
+
+</div>
+
+<div class="clearall">&nbsp;</div>
+
+<div class="sub">
+  <h1 style="font-size: 20px">Edytory</h1>
+</div>
+
+<div class="main">
+  <p style="font-size: 14px">
+    Główny <a href="/programisci">zespół programistów Rails</a> używa <a href="http://macromates.com/">TextMate</a> działającego pod Mac OS X. To świetny edytor, który jest standardowo wyposażony w podświetlania kodu i makra. Ci którzy potrzebują bardziej rozbudowanego środowiska do pracy mogą skorzystać m.in. <a href="http://www.jetbrains.com/ruby/">RubyMine</a> (oparty na IntelliJ IDEA), <a href="http://netbeans.org/">Netbeans</a> czy <a href="http://www.aptana.com/products/studio3">Aptana Studio </a> (RadRails, oparty na Eclipse). RubyMine ma najwięcej <a href="http://www.jetbrains.com/ruby/">możliwości</a> ale nie jest darmowy tak jak pozostałe wymienione. Poza tym wsparcie dla Ruby'ego i Rails posiada obecnie większość popularnych edytorów takich jak <a href="http://www.vim.org">Vim</a>, <a href="http://www.gnu.org/software/emacs">Emacs</a> czy <a href="http://www.jedit.org">Jedit</a>.
+  </p>
+
+</div>
