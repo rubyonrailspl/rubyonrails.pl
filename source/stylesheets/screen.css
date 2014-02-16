@@ -81,7 +81,7 @@ input.big {
 
 a[lang=en] { /*oznaczenie linków do treści po angielsku na podstawie atrybutu lang, nie działa w IE*/
     padding-right: 15px;
-    background-image: url(/page_attachments/0000/0031/en.gif);
+    background-image: url(/images/en.gif);
     background-position: 100% 50%;
     background-repeat: no-repeat;
 }

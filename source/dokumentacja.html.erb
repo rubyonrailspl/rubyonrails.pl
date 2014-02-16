@@ -1,6 +1,10 @@
 ---
 title: Dokumentacja Ruby on Rails
 ---
+<% content_for(:message) do %>
+  <%= image_tag("hdr-docs.gif", :alt => "Naucz się wszystkiego o Ruby on Rails") %>
+<% end %>
+
 <div class="sub">
 
   <h1>Oficjalna dokumentacja (API)</h1>
@@ -59,17 +63,23 @@ title: Dokumentacja Ruby on Rails
     są już nieaktualne i dotyczą historycznych wersji frameworka. Najnowsze książki są w jęz. angielskim.</p>
 
   <p>
-    <a href="http://pragprog.com/book/rails4/agile-web-development-with-rails"><%= image_tag("agile-rails4.jpg", :border=>"1", :style=>"border:1px solid gray") %>
+    <a href="http://pragprog.com/book/rails4/agile-web-development-with-rails"><%= image_tag("agile-rails4.jpg", :border=>"1", :style=>"border:1px solid gray", :align => "right") %>
       <br>"Agile Web Development with Rails 4", Sam Ruby, Dave Thomas, David Heinemeier Hansson</a>
   </p>
 
-  <p><a href="http://pragprog.com/book/jvrails2/crafting-rails-applications"><%= image_tag("crafting-rails4.jpg", :border=>"1", :style=>"border:1px solid gray") %>
+  <br class="clearall"/>
+
+  <p><a href="http://pragprog.com/book/jvrails2/crafting-rails-applications"><%= image_tag("crafting-rails4.jpg", :border=>"1", :style=>"border:1px solid gray", :align => "right") %>
       <br>"Crafting Rails 4 Applications: Expert Practices for Everyday Rails Development", José Valim</a></p>
 
-  <p><a href="https://leanpub.com/tr4w"><%= image_tag("rails4-way.png", :border=>"1", :style=>"border:1px solid gray") %>
+  <br class="clearall"/>
+
+  <p><a href="https://leanpub.com/tr4w"><%= image_tag("rails4-way.png", :border=>"1", :style=>"border:1px solid gray", :align => "right") %>
       <br>"The Rails 4 Way", Obie Fernandez</a></p>
 
-  <p><a href="http://www.manning.com/bigg2/"><%= image_tag("rails4-action.jpg", :border=>"1", :style=>"border:1px solid gray") %>
+  <br class="clearall"/>
+
+  <p><a href="http://www.manning.com/bigg2/"><%= image_tag("rails4-action.jpg", :border=>"1", :style=>"border:1px solid gray", :align => "right") %>
       <br>"Rails 4 in Action", Ryan Bigg, Yehuda Katz, Steve Klabnik</a></p>
 
 </div>
