@@ -11,17 +11,18 @@
   <body class="overview">
     <div class="Container">
       <%= partial "header" %>
-      <r:snippet name="message" />
+      <div class="message">
+	<%= image_tag("rails.png", :width=>"87", :height=>"112", :style=>"margin-right: 10px", :alt=>"Rails") %>
+	<%= yield_content :message %>
+      </div>
     </div>
 
-    <r:if_content part="extended"><r:content part="extended" /></r:if_content>
+    <%= yield_content :extended %>
 
-    <r:if_content>
-      <div class="content">
-	<%= yield %>
-	<div class="clearall">&nbsp;</div>
-      </div>
-    </r:if_content>
+    <div class="content">
+      <%= yield %>
+      <div class="clearall">&nbsp;</div>
+    </div>
 
     <%= partial "footer" %>
   </body>

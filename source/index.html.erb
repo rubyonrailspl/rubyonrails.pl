@@ -1,6 +1,15 @@
 ---
 title: Ruby on Rails PL
 ---
+<% content_for(:message) do %>
+  <%= image_tag("hdr-overview.gif", :alt=>"Bezbolesne tworzenie aplikacji internetowych") %>
+<% end %>
+
+<% content_for(:extended) do %>
+  <%= partial("announce") %>
+  <%= partial("slivers") %>
+  <%= partial("quote_show") %>
+<% end %>
 
 <div class="sub">
   <h1>Co jest w środku?</h1>
@@ -90,14 +99,13 @@ title: Ruby on Rails PL
 
 <div class="main">
   <p>
-    Rails współpracuje z dużą ilością serwerów WWW i baz danych. Jako serwer WWW polecamy serwery <a href="http://httpd.apache.org/">Apache</a> lub <a href="http://nginx.net/">Nginx</a>, z modułem <a href="http://www.modrails.com/">Phusion Passenger</a> lub serwery <a href="http://mongrel.rubyforge.org/">Mongrel</a>, <a href="http://code.macournoyer.com/thin/">Thin</a> lub <a href="http://unicorn.bogomips.org/">Unicorn</a>.
+    Rails współpracuje z dużą ilością serwerów WWW i baz danych. Jako serwer WWW polecamy serwery <a href="http://httpd.apache.org/">Apache</a> lub <a href="http://nginx.net/">Nginx</a>, z modułem <a href="http://www.modrails.com/">Phusion Passenger</a> lub serwery aplikacji <a href="http://code.macournoyer.com/thin/">Thin</a>, <a href="http://unicorn.bogomips.org/">Unicorn</a> lub <a href="http://puma.io">Puma</a>.
     Jako bazy danych możesz użyć MySQL, PostgreSQL, SQLite, Oracle, SQL Server, DB2, lub Firebird.
     Rails działa prawie pod każdym systemem operacyjnym, ale dla systemu produkcyjnego radzimy użyć jednego z systemów 'nix.
   </p>
   
   <p>
 
-    <a href="http://joyent.com"><r:attachment:image name="88x31-joyent.png" style="margin-top: 5px" width="88" height="31" border="0" align="right" alt="Joynet"/></a> Jeśli potrzebujesz hostingu, <a href="http://joyent.com">Joyent</a> jest oficjalnym dostawcą usług związanych z hostowaniem aplikacji Rails, ma interesującą ofertę i doświadczonych pracowników.
-    Aby zobaczyć pełną listę dostawców zajrzyj na <a href="http://wiki.rubyonrails.com/rails/pages/RailsWebHosts" lang="en">wiki</a>.
+    <a href="https://shellycloud.com"><%= image_tag("shellycloud.svg", :style=>"margin-top: 5px", :align=>"right", :alt=>"Shelly Cloud") %></a> Jeśli potrzebujesz hostingu, <a href="https://shellycloud.com">Shelly Cloud</a> jest bardzo dobrym dostawcą usług związanych z hostowaniem aplikacji Rails, ma interesującą ofertę i doświadczonych pracowników.
   </p>
 </div>
