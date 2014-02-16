@@ -17,3 +17,6 @@
 .DS_Store
 
 *~
+
+# Ignore Middleman's build directory
+build
