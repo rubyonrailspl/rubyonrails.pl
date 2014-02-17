@@ -12,7 +12,7 @@ title: Wdrożenie aplikacji Ruby on Rails
 <div class="main">
   <%= image_tag("passenger.png", :alt=>"Passenger aka mod_rails", :style=>"margin-left: 10px; margin-top: 10px;", :align=>"right") %>
   <p>
-    Preferowanym rozwiązaniem wdrożeniowych jest <a href="https://www.phusionpassenger.com/">Phusion Passenger</a>. Działa jako moduł do serwera <a href="http://httpd.apache.org/">Apache</a>, <a href="http://nginx.org/">Nginx</a> lub jako <a href="http://www.modrails.com/documentation/Users%20guide%20Standalone.html">samodzielny serwer</a> (używa binariów Nginx) który może służyć zarówno do budowy kodu (zamiast domyślnego Webrick'a) jak i na produkcji. Najprostsze i często najbardziej efektywne rozwiązanie. Dostępna jest też płatna, rozbudowana wersja <a href="https://www.phusionpassenger.com/enterprise">Passenger Enterprise</a>.
+    Preferowanym rozwiązaniem wdrożeniowym jest <a href="https://www.phusionpassenger.com/">Phusion Passenger</a>. Działa jako moduł do serwera <a href="http://httpd.apache.org/">Apache</a>, <a href="http://nginx.org/">Nginx</a> lub jako <a href="http://www.modrails.com/documentation/Users%20guide%20Standalone.html">samodzielny serwer</a> (używa binariów Nginx) który może służyć zarówno do budowy kodu (zamiast domyślnego Webricka) jak i na produkcji. Jest to najprostsze i często najbardziej efektywne rozwiązanie. Dostępna jest też płatna, rozbudowana wersja <a href="https://www.phusionpassenger.com/enterprise">Passenger Enterprise</a>.
   </p>
 </div>
 
@@ -26,7 +26,7 @@ title: Wdrożenie aplikacji Ruby on Rails
 <div class="main">
   <%= image_tag("mongrel.jpg", :alt=>"Mongrel", :style=>"margin-left: 10px;", :align=>"right") %>
   <p>
-    Zanim pojawił się Passenger, aplikacje Rails były z reguły wdrażane przy użyciu serwerów Apache lub <a href="http://nginx.net/">Nginx</a> wykorzystując albo wbudowane moduły proxy albo osobny serwer proxy, np. <a href="http://haproxy.1wt.eu/">HAProxy</a>) oraz klaster serwerów aplikacyjnych <a href="http://mongrel.rubyforge.org/">Mongrel</a> lub <a href="http://code.macournoyer.com/thin/">Thin</a>. Takie ustawienie działa znakomicie i wiele osób wciąż je wybiera, choć jest bardziej skomplikowane. Obecnie używa się najczęściej serwera Thin, <a href="http://unicorn.bogomips.org/">Unicorn</a> lub <a href="http://puma.io">Puma</a>.
+    Zanim pojawił się Passenger, aplikacje Rails były z reguły wdrażane przy użyciu serwerów Apache lub <a href="http://nginx.net/">Nginx</a> (wykorzystując albo wbudowane moduły proxy, albo osobny serwer proxy, np. <a href="http://haproxy.1wt.eu/">HAProxy</a>) oraz klastra serwerów aplikacyjnych <a href="http://mongrel.rubyforge.org/">Mongrel</a> lub <a href="http://code.macournoyer.com/thin/">Thin</a>. Takie ustawienie działa znakomicie i wiele osób wciąż je wybiera, choć jest bardziej skomplikowane. Obecnie używa się najczęściej serwera Thin, <a href="http://unicorn.bogomips.org/">Unicorn</a> lub <a href="http://puma.io">Puma</a>.
   </p>
 </div>
 
@@ -39,7 +39,7 @@ title: Wdrożenie aplikacji Ruby on Rails
 <div class="main">
   <%= image_tag("duke.jpg", :alt=>"JRuby", :style=>"margin-left: 10px;", :align=>"right") %>
   <p>
-    <a href="http://jruby.org/">JRuby</a> umożliwia uruchamianie aplikacji Rails na Maszynie Wirtualnej Java. Oznacza to, że możesz uruchomić aplikacje Rails na serwerach aplikacyjnych takich jak: <a href="http://www.jboss.org/">JBoss</a> (zobacz: <a href="http://torquebox.org">Torquebox</a>), <a href="https://glassfish.dev.java.net/">Glassfish</a> czy <a href="http://jetty-rails.rubyforge.org/">Jetty</a>. Możesz użyć <a href="http://caldersphere.rubyforge.org/warbler/">Warbler'a</a> aby spakować aplikację do formatu WAR. Idealny sposób na przeniknięcie do świata "enterprise". 
+    <a href="http://jruby.org/">JRuby</a> umożliwia uruchamianie aplikacji Rails na Maszynie Wirtualnej Java. Oznacza to, że możesz uruchomić aplikacje Rails na serwerach aplikacyjnych takich jak: <a href="http://www.jboss.org/">JBoss</a> (zobacz: <a href="http://torquebox.org">Torquebox</a>), <a href="https://glassfish.dev.java.net/">Glassfish</a> czy <a href="http://jetty-rails.rubyforge.org/">Jetty</a>. Możesz użyć <a href="http://caldersphere.rubyforge.org/warbler/">Warblera</a> aby spakować aplikację do formatu WAR. Idealny sposób na przeniknięcie do świata "enterprise". 
 </div>
 
 
@@ -64,7 +64,7 @@ title: Wdrożenie aplikacji Ruby on Rails
 </div>
 
 <div class="main">
-  <p>Coraz więcej firm hostingowych wspiera Rails, niektóre oferują usługi hostingowe przeznaczone szczególnie do aplikacji Rails: <a href="https://shellycloud.com">Shelly Cloud</a>, <a href="http://www.heroku.com/">Heroku</a>, <a href="http://www.brightbox.co.uk/">Brightbox</a>, <a href="http://www.engineyard.com/">Engine Yard</a>. Jeśli szukasz VPS'a polecamy <a href="http://www.megiteam.pl">MegiTeam</a>, <a href="http://www.oktawave.com">Oktawave</a>, <a href="http://www.rootbox.com/pl">Rootbox</a> oraz <a href="https://www.digitalocean.com">Digital Ocean</a>.</p>
+  <p>Coraz więcej firm hostingowych wspiera Rails, niektóre oferują usługi hostingowe przeznaczone szczególnie do aplikacji Rails: <a href="https://shellycloud.com">Shelly Cloud</a>, <a href="http://www.heroku.com/">Heroku</a>, <a href="http://www.brightbox.co.uk/">Brightbox</a>, <a href="http://www.engineyard.com/">Engine Yard</a>. Jeśli szukasz VPS-a polecamy <a href="http://www.megiteam.pl">MegiTeam</a>, <a href="http://www.oktawave.com">Oktawave</a>, <a href="http://www.rootbox.com/pl">Rootbox</a> oraz <a href="https://www.digitalocean.com">Digital Ocean</a>.</p>
 
   <p><a href="https://shellycloud.com">Shelly Cloud</a> jest polską firmą oferującą zautomatyzowany deployment aplikacji napisanych w Ruby na prywatnej chmurze.</p>
 
