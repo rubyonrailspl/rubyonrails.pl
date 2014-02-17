@@ -73,5 +73,6 @@ end
 require 'rack/rewrite'
 use Rack::Rewrite do
   rewrite   '/',  '/index.html'
+  rewrite   '/CNAME',  '/CNAME'
   rewrite   %r{/([^\.]+)$},   '/$1.html'
 end
