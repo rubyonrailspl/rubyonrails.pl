@@ -68,3 +68,10 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# rewrite /page to /page.html
+require 'rack/rewrite'
+use Rack::Rewrite do
+  rewrite   '/',  '/index.html'
+  rewrite   %r{/([^\.]+)$},   '/$1.html'
+end
