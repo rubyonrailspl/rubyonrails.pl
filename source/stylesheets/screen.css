@@ -618,9 +618,9 @@ body.casestudy div.sub h3 {
 }
 
 /* PLANETA */
-div#planet { 
+div#planet {
 	margin-left: 15%;
-	width: 70%; 
+	width: 70%;
 }
 .item {margin-bottom: 50px; font-size: 80%;}
 .item h3 a {
@@ -632,4 +632,20 @@ div#planet {
 	font-size:18px;
 	line-height:20px;
 	font-family:georgia,"Lucida Grande",arial,helvetica,sans-serif;
+}
+
+.download-badge {
+  position: relative;
+}
+
+.download-badge span {
+  color: white;
+  font-weight: bold;
+  font-size: 41px;
+  position: absolute;
+  text-shadow: 0px 0px 5px silver;
+  top: 85px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
 }
