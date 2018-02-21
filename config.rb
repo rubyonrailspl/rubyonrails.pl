@@ -71,7 +71,8 @@ end
 
 # rewrite /page to /page.html
 require 'rack/rewrite'
-use Rack::Rewrite do
+
+use ::Rack::Rewrite do
   rewrite   '/',  '/index.html'
   rewrite   '/CNAME',  '/CNAME'
   rewrite   %r{/([^\.]+)$},   '/$1.html'
